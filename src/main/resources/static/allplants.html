@@ -1,0 +1,228 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlantShed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../static/css/bootstrap-override.css" rel="stylesheet">
+    <link  href="../static/css/custom.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+
+                    Plantshed
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarcollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navdropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+                                <li><a class="dropdown-item" href="fruit-trees.html">Fruit Trees</a></li>
+                                <li><a class="dropdown-item" href="roses.html">Roses</a></li>
+                                <li><a class="dropdown-item" href="grasses.html">Grasses</a></li>
+                                <li><a class="dropdown-item" href="sunflowers.html">Sunflowers</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="allplants.html">All Plants</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="plantssubscription.html">
+                                Plants Subscription
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="plantshedCafe.html">
+                                Plantshed Cafe
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+    <main role="main">
+
+        <div class="container-fluid jumbotron jumbotron-detail-all-plants py-5">
+            <div class="container">
+                <h1 class="display-3 fw-bold text-white">Our Fantastic Plants</h1>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <nav class="my-3 ms-3" style="...">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">All Plants</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">All Plants</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card p-3">
+                    <figure class="p-3 mb-0">
+                        <blockquote class="blockquote">
+                            <p>All of our plants are award winning</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                            Plantshed
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/roses.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Roses</h5>
+                        <p class="card-text">Some More Roses</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="roses.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/grasses.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Grasses</h5>
+                        <p class="card-text">Some More Grasses</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="grasses.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/roses.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Roses</h5>
+                        <p class="card-text">Some More Roses</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="roses.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card bg-primary text-white text-center p-3">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>Plantshed for all your garden needs</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-white">
+                            Alan Titchmarsh in <cite title="Source Title">Ground Force</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/diffSunflowers.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunflowers</h5>
+                        <p class="card-text">Some More Sunflowers</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="sunflowers.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/diffSunflowers.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunflowers</h5>
+                        <p class="card-text">Some More Sunflowers</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="sunflowers.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/fruit-trees.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruit Trees</h5>
+                        <p class="card-text">Some More Fruit Trees</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="fruit-trees.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>Amazing Plants!</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                            Monty Don in <cite title="Source Title">Gardeners World</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/grasses.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Grasses</h5>
+                        <p class="card-text">Some More Grasses</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="grasses.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

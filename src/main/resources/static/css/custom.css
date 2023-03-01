@@ -1,0 +1,62 @@
+body {
+    padding-top: 10px;
+    padding-bottom: 5px;
+        
+}
+
+.bg-primary {
+    background-color:  #4dac4d !important;
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 0px;
+}
+
+.shopping-cart-offcanvas {
+    width: 500px;
+}
+
+.jumbotron-detail-fruit-trees {
+    background: url('../images/peaches.jpg') no-repeat fixed;
+
+}
+.jumbotron-all-plants {
+    background: url('../images/allPlants.jpg') no-repeat fixed;
+
+}
+.jumbotron-detail-sunflowers { 
+    background: url('../images/sunflowerSunset.jpg') no-repeat fixed;
+
+}
+.jumbotron-detail-roses {
+    background: url('../images/pinkRoses.jpg') no-repeat fixed;
+
+}
+.jumbotron-detail-grasses {
+    background: url('../images/grasses2.jpg') no-repeat fixed;
+}
+.jumbotron-detail-plantshedCafe {
+    background: url('../images/plantshedCafe3.jpg') no-repeat fixed;
+
+}
+.jumbotron {
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.1);
+    height: 40vh;
+    background-size: cover;
+}
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

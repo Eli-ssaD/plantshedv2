@@ -21,9 +21,17 @@ public class HomeController {
 	
 	@GetMapping("/account")
 	public String account(Model model, @AuthenticationPrincipal OidcUser principal) {
+		String userName = principal.getNickName();
+		
+		model.addAttribute("userName", userName);
+
+		String email = principal.getEmail();
+
+		model.addAttribute("userEmail", email);
 		
 		return "account";
 	}
+	
 	
 
 	
